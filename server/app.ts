@@ -4,6 +4,9 @@ import taskRoutes from './src/routes/routes';  // Importa las rutas definidas en
 import { notFoundController } from './src/middlewares/notFoundController';  // Importa el controlador de la página no encontrada.
 import dotenv from 'dotenv';  // Importa dotenv para cargar variables de entorno desde un archivo .env.
 
+// Importa la función createTables desde createTables.ts
+import { createTables } from './src/db/createTables';
+
 dotenv.config();  // Carga las variables de entorno definidas en el archivo .env en el proceso de Node.js.
 
 const app = express();  // Crea una instancia de la aplicación Express.
@@ -17,6 +20,9 @@ app.use(taskRoutes);  // Asocia las rutas definidas en taskRoutes con la aplicac
 
 // Manejo de errores 404
 app.use(notFoundController);  // Utiliza el controlador de página no encontrada cuando ninguna ruta coincide con la solicitud.
+
+// Llama a la función createTables antes de iniciar el servidor
+createTables()
 
 // Iniciar el servidor
 app.listen(PORT, () => {  // Inicia el servidor Express en el puerto especificado.

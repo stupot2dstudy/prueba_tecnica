@@ -1,5 +1,8 @@
+// createTables.ts
+
 import { getConnection } from './getConnection'; // Importa la función getConnection desde el archivo getConnection.ts para establecer la conexión a la base de datos MySQL.
 import { Connection } from 'mysql2/promise'; // Importa el tipo Connection de mysql2/promise para tipar la variable de conexión.
+
 
 // Consultas SQL para crear tablas
 const createTableQueries = [
@@ -40,4 +43,4 @@ export async function createTables() {
 }
 
 // Llama a la función para crear las tablas
-createTables();
+// createTables();

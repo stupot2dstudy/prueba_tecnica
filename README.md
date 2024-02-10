@@ -42,31 +42,76 @@ Descripción: Maneja la creación de una nueva tarea.
 Valores requeridos: título, descripción, estado.
 Función: createTask
     (title: string, description: string, status: enum).
+    - POST http://localhost:8080/tasks
 
 ### Controlador updateTask
 Descripción: Maneja la actualización de una tarea existente.
 Valores requeridos: taskId, descripción, estado.
 Función: updateTask
     (description: string, status: string).
+    - PUT http://localhost:8080/tasks/:taskId
 
 ### Controlador deleteTask
 Descripción: Maneja la eliminación de una tarea existente.
 Valores requeridos: taskId.
 Función: deleteTask
     (taskId: number).
+    - DELETE http://localhost:8080/tasks/:taskId
 
 ### Controlador getTaskById
 Descripción: Recupera una tarea por su ID.
 Valores requeridos: taskId.
 Función: getTaskById
     (taskId: number)
+    - GET http://localhost:8080/tasks/:taskId
 
 ### Controlador getAllTasks
 Descripción: Recupera todas las tareas.
     Función: getAllTasks():
+    - GET http://localhost:8080/tasks
 
 
 
+## Para configurar una instancia básica de MySQL en AWS RDS, puedes seguir estos pasos:
+
+# Inicio de sesión en AWS:
+
+1. Inicia sesión en tu cuenta de AWS en la consola de administración de AWS: AWS Management Console [aqui](https://aws.amazon.com/free/?gclid=CjwKCAiA2pyuBhBKEiwApLaIO2JFXeSxbzxB39wh6qnjgkp2JhCMM1BKCAECjDd2i13YryqznPlzdxoCY_gQAvD_BwE&trk=349e66be-cf8d-4106-ae2c-54262fc45524&sc_channel=ps&ef_id=CjwKCAiA2pyuBhBKEiwApLaIO2JFXeSxbzxB39wh6qnjgkp2JhCMM1BKCAECjDd2i13YryqznPlzdxoCY_gQAvD_BwE:G:s&s_kwcid=AL!4422!3!455709741726!e!!g!!aws%20console!10817378576!108173614282&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all).
+
+2. Navegación a RDS:
+
+Una vez que hayas iniciado sesión, navega hasta el servicio de Amazon RDS haciendo clic en "Servicios" en la parte superior de la pantalla y luego selecciona "RDS" bajo la sección "Bases de datos".
+
+3. Creación de una instancia de base de datos:
+
+Haz clic en "Crear base de datos" para iniciar el proceso de creación de una nueva instancia de base de datos. A continuación, selecciona el motor de base de datos MySQL.
+
+4. Configuración básica:
+
+Configura los siguientes detalles básicos de tu instancia de base de datos:
+
+ - Motor de base de datos: MySQL
+ - Versión del motor: Se Eligo la versión de MySQL.
+ - Plantilla de uso: Se eligo "Desarrollo".
+
+ - Configuración de la instancia: Se ha seleccionado el  tamaño minimo para realizar pruebas.
+ - Autenticación: Configura el nombre de usuario y la contraseña para acceder a la base de datos.
+ 
+ - Revisión y creación:
+
+
+Una vez que hayas creado tu instancia de base de datos en RDS, puedes conectar tu aplicación Node.js a esta instancia utilizando estos detalles de conexión.
+
+En cuanto a la documentación sobre la arquitectura de MySQL en AWS, aquí tienes algunos enlaces de referencia:
+
+Documentación oficial de Amazon RDS para MySQL [aqui] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html
+)
+Guía de arquitectura de Amazon RDS[aqui](https://aws.amazon.com/architecture/databases/
+)
+Tutorial de implementación de MySQL en AWS RDS [aqui] (https://aws.amazon.com/getting-started/hands-on/create-mysql-db/
+)
+
+Estos recursos proporcionan una visión general de cómo funciona MySQL en AWS, los aspectos de configuración y administración, así como las mejores prácticas para implementar y administrar instancias de MySQL en RDS.
 
 
 

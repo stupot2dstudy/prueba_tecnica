@@ -115,12 +115,11 @@ Una vez que hayas creado tu instancia de base de datos en RDS, puedes conectar t
 
 En cuanto a la documentación sobre la arquitectura de MySQL en AWS, aquí tienes algunos enlaces de referencia:
 
-Documentación oficial de Amazon RDS para MySQL [aqui] (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html
-)
-Guía de arquitectura de Amazon RDS[aqui](https://aws.amazon.com/architecture/databases/
-)
-Tutorial de implementación de MySQL en AWS RDS [aqui] (https://aws.amazon.com/getting-started/hands-on/create-mysql-db/
-)
+Documentación oficial de Amazon RDS para MySQL[aqui](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html).
+
+Guía de arquitectura de Amazon RDS [aqui](https://aws.amazon.com/architecture/databases/)
+
+Tutorial de implementación de MySQL en AWS RDS [aqui](https://aws.amazon.com/getting-started/hands-on/create-mysql-db/)
 
 Estos recursos proporcionan una visión general de cómo funciona MySQL en AWS, los aspectos de configuración y administración, así como las mejores prácticas para implementar y administrar instancias de MySQL en RDS.
 

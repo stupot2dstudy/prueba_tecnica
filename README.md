@@ -18,29 +18,22 @@ DB_PASSWORD=Qwerty12345-_
 DB_DATABASE=bobsdata
 PORT=8080
 ```
-## 2. Creación de las tablas en la base de datos
-
-Para crear las tablas necesarias en la base de datos, ejecuta el script proporcionado en el archivo `createTables.ts`. Este script utilizará la configuración de conexión desde el archivo `.env` para conectarse a la base de datos y ejecutar las consultas SQL para crear las tablas.
-
-```bash
-npx ts-node src/db/createTables.ts
-```
-## 3. Inicialización del servidor Node.js
+## 2. Inicialización del servidor Node.js
 Antes de iniciar el servidor Node.js, asegúrate de haber instalado todas las dependencias del proyecto utilizando el comando:
 
 ```bash
-npx install
+npm install
 ```
 Una vez instaladas las dependencias, puedes iniciar el servidor Node.js ejecutando el siguiente comando:
 
 ```bash
-npx ts-node src/db/createTables.ts
+npm start
 ```
 Esto iniciará tu servidor Node.js en el puerto especificado en el archivo .env, y estará listo para recibir solicitudes y conectarse a la base de datos MySQL en AWS.
 
 ¡Y eso es todo! Ahora has configurado y ejecutado con éxito un servidor Node.js conectado a una base de datos MySQL en AWS. ¡Feliz codificación!
 
-## 4. Importa y utiliza los controladores y middleware necesarios para manejar las solicitudes y respuestas.
+## 3. Importa y utiliza los controladores y middleware necesarios para manejar las solicitudes y respuestas.
 
 ### Controladores y Rutas
 

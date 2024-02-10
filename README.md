@@ -21,11 +21,22 @@ PORT=8080
 ## 2. Inicialización del servidor Node.js
 Antes de iniciar el servidor Node.js, asegúrate de haber instalado todas las dependencias del proyecto utilizando el comando:
 
+- Clona el repositorio:
+```bash
+git clone git@github.com:stupot2dstudy/prueba_tecnica.git
+```
+- Ve a la carpeta Server dentro del repositorio:
+```bash
+cd prueba_tecnica
+cd server
+```
+- Instala las depencias:
 ```bash
 npm install
 ```
 Una vez instaladas las dependencias, puedes iniciar el servidor Node.js ejecutando el siguiente comando:
 
+- Inicia el Servidor:
 ```bash
 npm start
 ```

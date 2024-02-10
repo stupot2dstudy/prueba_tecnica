@@ -4,8 +4,8 @@
 # En esta guía, aprenderás cómo configurar y ejecutar un servidor Node.js que se conecta a una base de datos MySQL alojada en AWS. Cubriremos los siguientes pasos:
 
 1. Configuración del archivo .env para almacenar las variables de entorno.
-2. Creación de las tablas necesarias en la base de datos.
-3. Inicialización del servidor Node.js.
+2. Inicialización del servidor Node.js.
+3. Importa y utiliza los controladores y middleware necesarios para manejar las solicitudes y respuestas.
 
 ##  1. Configuración del archivo `.env`
 
